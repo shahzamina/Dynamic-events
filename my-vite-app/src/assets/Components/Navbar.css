@@ -1,0 +1,96 @@
+
+.Nav-image{
+   height:100px;
+   width: 120%;
+   padding:3px ;
+   margin-left: 30px;
+   border-radius: 7%;
+   transition: transform 0.3s ease, filter 0.3s ease;
+}
+.Card-image ,.icons {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.Nav-image:hover,
+.Card-image:hover, 
+.icons:hover {
+  transform: scale(1.02);        
+  filter: brightness(1.05);     
+}
+
+.Dyn-nav{
+position: sticky;
+top: 0;
+left: 0;
+z-index: 1030;
+}
+.display{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 20px;
+}
+.navbar {
+   position: sticky;
+  top: 0;
+  left: 0;
+  height: 15%;
+  width:100%;
+  z-index: 1030;
+  background-color: rgb(8, 8, 8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+.nav-link {
+  transition: 
+    color 0.3s ease,     
+    transform 0.3s ease; 
+    color: rgb(255, 193, 7);
+}
+.nav-link:hover {
+  color: yellow !important;    
+  transform: translateY(-3px);   
+}
+.btn-warning {
+   transition: 
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+.btn-warning:hover {
+  color: rgb(255, 193, 7) !important; 
+ background-color: black;
+  color:black;
+  transform: translateY(-2px);
+}
+.btn-outline-warning {
+  color: rgb(255, 193, 7) !important;
+    transition: 
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+.btn-outline-warning:hover {
+  color: black !important;
+  transform: translateY(-2px);
+}
+.style{
+  color: black;
+  font-style: italic;
+  }
+
+.login-hover:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  
+}
+
+.dropdown-menu {
+  display: none;
+  transition: all 0.3s ease;
+ 
+}
+

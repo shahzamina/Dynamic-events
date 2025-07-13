@@ -1,0 +1,52 @@
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+.footer, .icons, .Com-ser {
+  display: flex;                         
+  align-items: center;                   
+  justify-content:space-around ;       
+  padding: 10px; 
+  gap: 10px;                        
+}
+.footer{
+    
+    width: 100%;
+    height: 480px;
+    background-color: black;
+}
+.footer-items{
+  height: 70%;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.footer-image{
+    height: 150px;
+    margin-left: 26px;
+    margin-bottom: 10%;
+}
+.Com-ser{
+    margin-right: 20px;
+    margin-bottom: 70px;
+    width: 45%;
+}
+.Com-ser div ul li{
+    list-style: none;
+    line-height: 30px;
+    font-size: 17px;
+}
+.legal{
+    margin-bottom: 15%;
+}
+.icons-items{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.icons-items i{
+   margin-left: 30px;
+   font-size: 40px;
+   color: warning;
+}
+

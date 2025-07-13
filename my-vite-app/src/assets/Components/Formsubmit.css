@@ -1,0 +1,15 @@
+.dis-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* gap-4 = 1.5rem in Bootstrap */
+  width: 50%;
+  margin-left: 70px;
+}
+.bg-image {
+  background-image: url('./Images/Light.png'); /* Replace with actual path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+
+}

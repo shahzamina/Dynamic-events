@@ -1,0 +1,18 @@
+.arrow-button {
+  border: none;
+  background-color: transparent;
+  border-radius:2%;
+  width: 20px;
+  height: 20px;
+  font-size: 30px;
+  color: black;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.arrow-button:hover {
+   transform: scale(1.1);
+  }
+
