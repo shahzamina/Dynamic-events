@@ -6,13 +6,13 @@ import Services from './Services.jsx';
 
 const Carrental = () => {
    const slide=[
-    {  src:'./Images/Cr6.jpeg', text: 'Car Rental' },
+    {  src:'./Images/t62.jpg', text: 'Car Rental' },
     {  src: './Images/Cr1.jpeg', text: 'Car Rental' },
     {  src: './Images/Cr7.jpeg', text: 'Car Rental' },
     {  src: './Images/Cr2.jpeg', text: 'Car Rental' },
     {  src: './Images/Cr8.jpeg', text: 'Car Rental' },
     ];
-   const heading1="Luxury & Event Car Rental Services Across Pakistan";
+  const heading1="Luxury & Event Car Rental Services Across Pakistan";
   const para1="Arrive in style and comfort with Dynamic Event Management’s premium car rental services, meticulously crafted to bring elegance, convenience, and sophistication to your special occasions. Whether you're planning the grand entrance of a bride and groom, arranging the arrival of VIP guests, or organizing group transportation for an entire wedding party, we offer reliable, luxurious, and fully coordinated car rental solutions tailored to events of every scale. Our service features a diverse fleet of high-end vehicles, each driven by professional chauffeurs and maintained to the highest industry standards. From timeless vintage classics that exude charm to sleek modern luxury cars, and even unique options like traditional rickshaws or executive sedans — we ensure that every ride not only fits your event’s theme but also enhances the overall experience. With Dynamic Event Management, transportation becomes more than just travel — it becomes a memorable part of your celebration.";
   const heading2="Available Nationwide Across All Major Cities";
   const para2="Dynamic Event Management proudly offers premium car rental and transport services across the entire country. Whether you're hosting an event in the vibrant cityscapes of Islamabad, Lahore, Karachi, or in culturally rich hubs like Peshawar, Multan, Faisalabad, and Quetta, our services are readily available to ensure your guests arrive in style and comfort. We specialize in providing seamless transportation solutions not only for local events but also for destination weddings and multi-day celebrations, where coordination, reliability, and punctuality are key. With a strong operational network and logistics team, we are equipped to handle events in urban centers as well as remote or scenic wedding venues throughout Pakistan. From managing airport pickups for out-of-town guests to organizing elegant convoys for bridal and groom parties, we offer fully supported, end-to-end transport coordination. Wherever your event takes place, we bring our signature professionalism and luxury experience right to your doorstep.";
@@ -29,5 +29,4 @@ const Carrental = () => {
     </div>
   )
 }
-
 export default Carrental

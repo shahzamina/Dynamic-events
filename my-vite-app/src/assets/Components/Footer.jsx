@@ -1,13 +1,18 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import { Link } from 'react-router-dom';
 import './Footer.css'; 
 
 const Footer = () => {
+  const [ComHover, setComHover] = useState(false);
+const [SerHover, setSerHover] = useState(false);
+const [LegHover, setLegHover] = useState(false);
+
+
   return (
     <>
-   <footer className='footer'>
+   <footer className='footer footer-class f-wid'>
 
-    <div className='footer-items'>
+    <div className='footer-items '>
       <img className='footer-image' src="./Images/logo.png" alt="Logo"/>
       
       <div className="icons-items">
@@ -20,10 +25,30 @@ const Footer = () => {
       
     </div>
 
-    <div className='Com-ser'>
-        <div className="company  mb-5 p-3">
-           <ul >
-            <li ><h3 className='style text-warning '>Company</h3></li>
+    <div className='Com-ser footer-class'>
+        <div className="company position-relative mb-sm-1 mb-md-5 p-1  ">
+         
+         <h3 className='style text-warning f-cur'   onMouseEnter={() => setComHover(true)} onMouseLeave={() => setComHover(false)}>Company
+  
+     {ComHover && (
+        <div className='d-sm-flex d-md-none footer-dropdown'>
+            <ul >
+            
+           <li  className="nav-item style fs-5" ><Link className="nav-link " to="/">Home</Link></li>
+                   <li  className=" style fs-5" ><Link className="nav-link " to="/about">About</Link></li>
+                   <li  className=" style fs-5" ><Link className="nav-link " to="/service">Services Setup</Link></li>
+                   <li  className=" style fs-5" ><Link className="nav-link " to="/events">Events</Link></li>
+                   <li  className=" style fs-5" ><Link className="nav-link " to="/packages">Packages</Link></li>
+                   <li  className=" style fs-5" ><Link className="nav-link " to="/contact">Contact Us</Link></li>
+           </ul>
+            </div>
+       )}</h3>
+  
+ 
+
+          <div className='d-sm-none d-md-flex'>
+           <ul  >
+            
            <li  className="nav-item style fs-5" ><Link className="nav-link " to="/">Home</Link></li>
                    <li  className=" style fs-5" ><Link className="nav-link " to="/about">About</Link></li>
                    <li  className=" style fs-5" ><Link className="nav-link " to="/service">Services Setup</Link></li>
@@ -32,38 +57,78 @@ const Footer = () => {
                    <li  className=" style fs-5" ><Link className="nav-link " to="/contact">Contact Us</Link></li>
            </ul>
         </div>
+        
+      
+</div>
+        <div className="Services position-relative p-2 mb-sm-1 " style={{marginTop:"10%"}}>
+             <h3 className='style text-warning f-cur'   onMouseEnter={() => setSerHover(true)} onMouseLeave={() => setSerHover(false)}>Services
+  
+     {SerHover && (
+        <div className='d-sm-flex d-md-none footer-dropdown '>
+            <ul >
+            <li className='style '> <Link className="nav-link" to="/photographer">Photographer</Link> </li>
+          <li className='style '> <Link className="nav-link" to="/weddingvenue">Wedding Venues</Link> </li>
+          <li className='style '> <Link className="nav-link" to="/bridalmakeup">Bridal Makeup</Link> </li>
+          <li className='style '> <Link className="nav-link" to="/henaartist">Hena Artist</Link> </li>
+          <li className='style '> <Link className="nav-link" to="/carrental">Car Rental</Link> </li>
+          <li className='style '> <Link className="nav-link" to="/wedsta">Wedding Stationary</Link> </li>
+          <li className='style '> <Link className="nav-link" to="/catering">Catering</Link> </li>
+          <li className='style '> <Link className="nav-link" to="/soundsys">Sound System</Link> </li>
+           <li className='style '><Link className="nav-link" to="/bridalwear">Bridal & Groom Wear</Link> </li>
+          <li className='style '> <Link className="nav-link" to="/decor">Decor</Link> </li>    
+        
+           </ul>
+            </div>
+       )}</h3>
 
-        <div className="Services p-2" style={{marginTop:"10%"}}>
+
+
+           <div className='d-sm-none d-md-flex'>
           <ul>
-          <li><h3 className='style text-warning '>Services</h3></li>
+          
           <li className='style '> <Link className="nav-link" to="/photographer">Photographer</Link> </li>
           <li className='style '> <Link className="nav-link" to="/weddingvenue">Wedding Venues</Link> </li>
           <li className='style '> <Link className="nav-link" to="/bridalmakeup">Bridal Makeup</Link> </li>
           <li className='style '> <Link className="nav-link" to="/henaartist">Hena Artist</Link> </li>
           <li className='style '> <Link className="nav-link" to="/carrental">Car Rental</Link> </li>
-            <li className='style '> <Link className="nav-link" to="/wedsta">Wedding Stationary</Link> </li>
+          <li className='style '> <Link className="nav-link" to="/wedsta">Wedding Stationary</Link> </li>
           <li className='style '> <Link className="nav-link" to="/catering">Catering</Link> </li>
           <li className='style '> <Link className="nav-link" to="/soundsys">Sound System</Link> </li>
            <li className='style '><Link className="nav-link" to="/bridalwear">Bridal & Groom Wear</Link> </li>
           <li className='style '> <Link className="nav-link" to="/decor">Decor</Link> </li>
             </ul>
+            </div>
         </div>
 
-        <div className="legal p-3" style={{marginBottom:"22%"}}>
+        <div className="legal position-relative p-3" style={{marginBottom:"22%"}}>
+            <h3 className='style text-warning f-cur'   onMouseEnter={() => setLegHover(true)} onMouseLeave={() => setLegHover(false)}>Legal
+  
+     {LegHover && (
+        <div className='d-sm-flex d-md-none footer-dropdown'>
+            <ul >
+                   <li className='style '><Link className="nav-link" to="/terms">Terms and Conditions</Link> </li>
+            <li className='style '><Link className="nav-link" to="/privacy">Privacy Policy</Link> </li>
+        
+           </ul>
+            </div>
+       )}</h3>
+            <div className='d-sm-none d-md-flex'>
           <ul>
-            <li><h3 className='style text-warning '>Legal</h3></li>
+            
             <li className='style '><Link className="nav-link" to="/terms">Terms and Conditions</Link> </li>
             <li className='style '><Link className="nav-link" to="/privacy">Privacy Policy</Link> </li>
           </ul>
+          </div>
         </div>
     </div>
 
-    
      
    </footer>
-    <div className=' display bg-warning fs-5 h-auto'>
-      <p className='style cus-st p-1 mb-0 mx-3' style={{fontSize:"15px"}}>© DynamicEvents 2025. ALL RIGHTS RESERVED.</p>
-      </div>
+    <div className='display gap-sm-1 bg-warning h-auto col-sm-8 col-md-12' >
+         <p className='style p-2 mb-0 ' style={{fontSize:'15px'}}>© DynamicEvents 2025. ALL RIGHTS RESERVED.</p>
+         
+       </div>
+
       </>
   )
 }

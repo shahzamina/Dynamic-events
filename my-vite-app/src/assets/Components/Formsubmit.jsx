@@ -68,9 +68,9 @@ const Formsubmit = ({h,name , email ,phone, com}) => {
 return (
   <div >
    
-   <p className='cus-st style mt-5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This form is an integral part of our Event Management System, designed to streamline the registration and coordination process for various events. Users are required to provide their basic information, such as name, contact details, and any additional comments or preferences. The collected data enables organizers to effectively plan logistics, communicate with attendees, and ensure a personalized and smooth event experience. Whether it's a corporate conference, workshop, or social gathering, this form helps facilitate efficient event execution while enhancing participant engagement.</p>
-   <div className="bg-warning rounded shadow dis-col my-5 w-50 mx-auto " >
-  <h2 className="style mt-5 text-center">{h}</h2>
+   <p className='cus-st style mt-5  about-class'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This form is an integral part of our Event Management System, designed to streamline the registration and coordination process for various events. Users are required to provide their basic information, such as name, contact details, and any additional comments or preferences. The collected data enables organizers to effectively plan logistics, communicate with attendees, and ensure a personalized and smooth event experience. Whether it's a corporate conference, workshop, or social gathering, this form helps facilitate efficient event execution while enhancing participant engagement.</p>
+   <div className="bg-warning rounded shadow dis-col my-5 form-com  " >
+  <h2 className="style mt-5 text-center  ">{h}</h2>
   <form className="dis-col my-3 " onSubmit={handleSubmit(onSubmit)}>
 
     <div className="dis-col gap-2 my-2 w-75 " >
@@ -131,7 +131,7 @@ return (
     />
       </div>
          <div>
-        <input className=" w-25 text-center fs-5 style p-2 my-5 bg-black text-white" style={{width: "100px", marginLeft:"80px"}} type="submit" value="Submit" disabled={isSubmitting} />
+        <input className=" form-btn text-center fs-5 style p-2 my-5 bg-black text-white"  type="submit" value="Submit" disabled={isSubmitting} />
       </div>
      </form>
 </div>

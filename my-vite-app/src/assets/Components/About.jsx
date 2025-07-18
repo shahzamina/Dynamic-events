@@ -5,10 +5,9 @@ import Imgcom from './Imgcom'
 import Cardlist from './Cardlist'
 import Conbtn from './Conbtn'
 import Revcom from './Revcom'
+import './Imgcom.css'
 const About = () => {
-   //<div className='display my-5  p-1 mx-5' style={{ boxShadow:"1px 2px 8px rgb(190, 161, 29)"}}>}
-
- const data=[
+  const data=[
   {
     show1:"one",
     h:"Our Approach",
@@ -18,7 +17,7 @@ const About = () => {
   {
     show2:"two",
     h:"Corporate Experience",
-     p:"We bring experience and creativity together to deliver events that surpass expectations through the integrated use of our team’s unique set of skills. We operate with integrity, energy, and attention to detail.In 2023, we provided multimedia solutions for the Spring Get-Together event held at FWO Engineering Mess. We organized a lunch event at the Institute of Regional Studies, and arranged the groundbreaking ceremony of the Hyderabad–Sukkur Motorway for the National Highway Authority (NHA), with the Prime Minister of Pakistan, Mian Muhammad Shahbaz Sharif, as the chief guest. We also managed the mega project opening in D.I. Khan District for NHA and WAPDA, again graced by the Prime Minister. Additionally, we arranged the HI Official Conference at Guns & Country Club for Friedrich-Ebert-Stiftung (FES) Pakistan, and organized an Iftar dinner at the Head Office, Blue Area, also for Friedrich-Ebert-Stiftung (FES) Pakistan.",
+    p:"We bring experience and creativity together to deliver events that surpass expectations through the integrated use of our team’s unique set of skills. We operate with integrity, energy, and attention to detail.In 2023, we provided multimedia solutions for the Spring Get-Together event held at FWO Engineering Mess. We organized a lunch event at the Institute of Regional Studies, and arranged the groundbreaking ceremony of the Hyderabad–Sukkur Motorway for the National Highway Authority (NHA), with the Prime Minister of Pakistan, Mian Muhammad Shahbaz Sharif, as the chief guest. We also managed the mega project opening in D.I. Khan District for NHA and WAPDA, again graced by the Prime Minister. Additionally, we arranged the HI Official Conference at Guns & Country Club for Friedrich-Ebert-Stiftung (FES) Pakistan, and organized an Iftar dinner at the Head Office, Blue Area, also for Friedrich-Ebert-Stiftung (FES) Pakistan.",
     image : "./Images/ce.jpg",
   },
    {
@@ -30,7 +29,7 @@ const About = () => {
   {
     show2:"two",
     h:"Corporate Experience",
-     p:"In 2022, we set up multimedia at FWO Engineers Officers Mess for a dine-out event organized by the Engineers-in-Chief's Branch of the Pakistan Army in honor of Lt. General (Retd.) Moazzam Ijaz. We also provided multimedia solutions for a get-together at FWO Headquarters and arranged a building lighting project for the 14th August celebration at Pak China Mall. Our team played a key role in the execution of the FWO Engineers Spring Festival held at Farhad Sports Complex. Additionally, we managed the inauguration of JSR (Jaglot-Skardu Road) and the placement of monuments at Zero Point (Gilgit) and Skardu (Kachura Chock). In 2023, we organized an inaugural event at the Institute of Regional Studies Islamabad titled “Contemporary Traditional & Non-Traditional Security Threats in South Asia,” with the President of Pakistan, Dr. Arif Alvi, as the chief guest.",
+    p:"In 2022, we set up multimedia at FWO Engineers Officers Mess for a dine-out event organized by the Engineers-in-Chief's Branch of the Pakistan Army in honor of Lt. General (Retd.) Moazzam Ijaz. We also provided multimedia solutions for a get-together at FWO Headquarters and arranged a building lighting project for the 14th August celebration at Pak China Mall. Our team played a key role in the execution of the FWO Engineers Spring Festival held at Farhad Sports Complex. Additionally, we managed the inauguration of JSR (Jaglot-Skardu Road) and the placement of monuments at Zero Point (Gilgit) and Skardu (Kachura Chock). In 2023, we organized an inaugural event at the Institute of Regional Studies Islamabad titled “Contemporary Traditional & Non-Traditional Security Threats in South Asia,” with the President of Pakistan, Dr. Arif Alvi, as the chief guest.",
     image : "./Images/ce2.jpg",
   },
   {
@@ -54,30 +53,28 @@ const About = () => {
   
 ]
 const dataset=[
-    { id: 1,  image: './Images/cl1.jpg'},
+        { id: 1,  image: './Images/cl1.jpg'},
         { id: 2,  image: './Images/cl2.jpg'},
         { id: 3,  image: './Images/cl3.jpg'},
 ]
 const head3="Our Performance"
 
-  const description11 = "We take pride in having collaborated with a diverse and prestigious portfolio of clients across various industries. Our clientele includes leading financial institutions, international technology companies, prominent consumer and retail brands, and major players in the automotive sector. We have also worked closely with educational institutions, government bodies, and innovative technology firms. With a strong commitment to excellence, we continue to deliver high-impact solutions tailored to the evolving needs of our clients across the country."
-  const head1="Our Clients"
-  const head2="Our Experience"
-  const head="About Dynamic Events "
-  const style = {
-  width :"40%"
-   }
+const description11 = "We take pride in having collaborated with a diverse and prestigious portfolio of clients across various industries. Our clientele includes leading financial institutions, international technology companies, prominent consumer and retail brands, and major players in the automotive sector. We have also worked closely with educational institutions, government bodies, and innovative technology firms. With a strong commitment to excellence, we continue to deliver high-impact solutions tailored to the evolving needs of our clients across the country."
+const head1="Our Clients"
+const head2="Our Experience"
+const head="About Dynamic Events "
+ 
   
   return (
-    <div>
+    <div >
       
-      <Mainhead head={head} style={style}/>
-      <p className='cus-st style'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We are a company that manages an event to achieve a stated goal as determined by the client. We will come up with ideas, develop a critical path, write a budget for an event, seek sponsorship and provide a series of experts in various fields of entertainment, education, design, strategic planning, food & beverage, presentation and copy writing, or whatever is required.<br /> <b> DYNAMIC Event Management</b> works with individuals and companies or as part of a committee. We are happy to act as sole organiser or become part of the steering team. We can provide all of the ideas or become another resource in a brainstorming team. In all cases we undertake the responsibility and management of the day to day minutiae that go into organising any event.</p>
+      <Mainhead head={head}/>
+      <p className='cus-st style about-class   '>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We are a company that manages an event to achieve a stated goal as determined by the client. We will come up with ideas, develop a critical path, write a budget for an event, seek sponsorship and provide a series of experts in various fields of entertainment, education, design, strategic planning, food & beverage, presentation and copy writing, or whatever is required.<br /> <b> DYNAMIC Event Management</b> works with individuals and companies or as part of a committee. We are happy to act as sole organiser or become part of the steering team. We can provide all of the ideas or become another resource in a brainstorming team. In all cases we undertake the responsibility and management of the day to day minutiae that go into organising any event.</p>
       <Mainhead head={head2} />
       <Imgcom data={data}/>
         <Mainhead head={head1} />
       <Cardlist head={head1} dataset={ dataset} description={description11}  style={{ backgroundColor: 'orange' }}  />  
-      <Mainhead head={head3} style={style}/>
+      <Mainhead head={head3} />
       <Revcom />
 
       <Conbtn/>

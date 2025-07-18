@@ -16,3 +16,37 @@
    transform: scale(1.1);
   }
 
+.card-class {
+    width: 90%; 
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 992px) {
+  .card-class {
+   width: 90%; 
+   margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-class {
+    width: 66%; 
+    margin-left: 3px;
+  }
+}
+
+.card-com {
+  margin-left: 45%;
+  }
+  @media (max-width: 992px) {
+  .card-com {
+  margin-left: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .card-com {
+   margin-left: 35%;
+  }
+}
+
+

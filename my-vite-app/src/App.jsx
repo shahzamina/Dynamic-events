@@ -9,7 +9,7 @@ import Photographer from './assets/Components/Photographer.jsx';
 import Events from './assets/Components/Events.jsx';
 import Navbar from './assets/Components/Navbar.jsx';
 
-import Business from './assets/Components/Business.jsx';
+
 import Navser from './assets/Components/Navser.jsx';
 import About from './assets/Components/About.jsx';
 
@@ -50,11 +50,6 @@ function App(){
   <Route path="/packcom" element={ <Packcom/> } />
   <Route path="/contact" element={<Contact/>} />
   <Route path="/packages" element={<Packages/>}/>
- 
- 
-  <Route path="/list-business" element={<Business/> } />
- 
- 
   <Route path="/photographer" element={ <Photographer/> } />
   <Route path="Venues1/" element={ <Venues1/>  } />
   <Route path="/bridalmakeup" element={ <Bridalmakeup/> } />

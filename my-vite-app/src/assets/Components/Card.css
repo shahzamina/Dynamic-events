@@ -1,0 +1,27 @@
+
+@media (max-width: 768px) {
+  .card-comp {
+   display: flex;
+   flex-direction: column;
+   
+  
+  }
+}
+
+@media (max-width: 768px) {
+  .card-comp1 {
+    margin-left: 4%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .card1 {
+font-size: 35px;
+margin-right: 35%;
+  
+
+  }
+}
+
+

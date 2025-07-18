@@ -1,0 +1,38 @@
+.your-class {
+    width: 90%; 
+   margin: 0 auto;
+  }
+  @media (max-width: 992px) {
+  .your-class {
+   width: 90%; 
+   margin: 0 auto;
+  
+  }
+}
+@media (max-width: 768px) {
+  .your-class {
+    width: 55%; 
+    margin-left: 1px;
+  
+  }
+}
+
+
+.pack-class {
+    width: 90%; 
+   margin: 0 auto;
+  }
+  @media (max-width: 992px) {
+  .pack-class {
+   width: 90%; 
+   margin: 0 auto;
+  
+  }
+}
+@media (max-width: 768px) {
+  .pack-class {
+    width: 119%; 
+    margin-left: 1px;
+  
+  }
+}

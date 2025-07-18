@@ -3,6 +3,8 @@ import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Mainhead from './Mainhead.jsx'
+import './Admlog.css'
+
 
 const Admlog = () => {
    
@@ -40,12 +42,12 @@ const head="Admin Login "
   return (
     <>
 <Mainhead head={head}/>
-     <p className='cus-st style text-center my-5' > Welcome to the Admin Panel Login.
+     <p className='cus-st style text-start my-5 about-class p-3' > Welcome to the Admin Panel Login.
 Please enter your secure credentials to access the management dashboard. Authorized personnel only. This secure login page is reserved for authorized administrators.
 Use your assigned username and password to access backend tools, manage data, and oversee event operations.
 For security purposes, make sure to log out after use.</p>
  
-    <div className="container mt-5 p-4 shadow bg-light rounded " style={{width:"40%", height:"100%",marginBottom:"5%", backgroundImage: "url('./Images/b4.jpg')", backgroundSize: "cover",backgroundRepeat: "no-repeat",backgroundPosition: "center"}}>
+    <div className="adm-com border border-black  container mt-5 p-4 shadow  rounded " style={{ height:"100%",marginBottom:"5%", backgroundImage: "url('./Images/b4.jpg')", backgroundSize: "cover",backgroundRepeat: "no-repeat",backgroundPosition: "center"}}>
      
       <form autoComplete="off" className="dis-col my-3 " onSubmit={handleSubmit(onSubmit)}>
         <div  className="dis-col gap-3 my-2 w-75 "  >

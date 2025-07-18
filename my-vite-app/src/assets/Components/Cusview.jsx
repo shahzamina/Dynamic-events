@@ -150,43 +150,45 @@ const handleUpdateSubmit = async () => {
   return (
     <>
  <Mainhead head={head} style={style}/>
-<p className='style cus-st'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> Welcome to the Admin Panel.</b>This admin dashboard provides a centralized view of all customer records. You can add, update, or remove data to efficiently manage event-related customer information. This page provides access to all customer records submitted through the event registration form. As an administrator, you have full control to view detailed customer information, add new entries, update existing records, and permanently delete unnecessary data. This ensures your customer database remains accurate and well-organized, supporting smooth and efficient event coordination.
+<p className='style cus-st about-class'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> Welcome to the Admin Panel.</b>This admin dashboard provides a centralized view of all customer records. You can add, update, or remove data to efficiently manage event-related customer information. This page provides access to all customer records submitted through the event registration form. As an administrator, you have full control to view detailed customer information, add new entries, update existing records, and permanently delete unnecessary data. This ensures your customer database remains accurate and well-organized, supporting smooth and efficient event coordination.
 </p>
 
 
-    <div className="container mt-4">
+    <div className="mt-4">
       <Mainhead head={head1} style={style}/>
-     <div className=" mt-1 " style={{marginLeft:"80%"}}>
-  <button className="btn btn-success p-3 styleauto fs-4 style fw-bold w-75 "  onClick={() => setCreateModalOpen(true)}>Create New</button>
+     <div className=" mt-5" >
+  <button className="cus-creat btn btn-success p-3  fs-4 style fw-bold  "  onClick={() => setCreateModalOpen(true)}>Create New</button>
 </div>
-      <div className="table-responsive mb-5">
-        <table className="table table-bordered table-striped mt-5">
+
+
+      <div className="t-wid  table-responsive mb-5 ">
+        <table className="  table1  table table-bordered table-striped mt-5 ">
           <thead className="table-dark">
             <tr>
-              <th  className="p-3 fs-5 fw-normal style text-center">#</th>
-              <th  className="p-3 fs-5 fw-normal style text-center">Name</th>
-              <th  className="p-3 fs-5 fw-normal style text-center">Email</th>
-              <th  className="p-3 fs-5 fw-normal style text-center">Phone</th>
-              <th  className="p-3 fs-5 fw-normal style text-center">Comment</th>
-              <th  className="p-3 fs-5 fw-normal style text-center">Action</th>
+              <th  className=" fs-5 fw-normal style text-center">#</th>
+              <th  className=" fs-5 fw-normal style text-center">Name</th>
+              <th  className=" fs-5 fw-normal style text-center">Email</th>
+              <th  className=" fs-5 fw-normal style text-center">Phone</th>
+              <th  className=" fs-5 fw-normal style text-center">Comment</th>
+              <th  className=" fs-5 fw-normal style text-center">Action</th>
             </tr>
           </thead>
           <tbody>
             {item.map((i, index) => (
               <tr key={index}>
-                <td  className="p-3 fw-normal style text-center">{index + 1}</td>
-                <td  className="p-3 fw-normal style text-center">{i.name}</td>
-                <td  className="p-3 fw-normal style text-center">{i.email}</td>
-                <td  className="p-3 fw-normal style text-center">{i.phone}</td>
-                <td  className="p-3 fw-normal style text-center">{i.comment || "No comment"}</td>
-                <td>
+                <td  className=" fw-normal style text-center">{index + 1}</td>
+                <td  className=" fw-normal style text-center">{i.name}</td>
+                <td  className=" fw-normal style text-center">{i.email}</td>
+                <td  className=" fw-normal tyle text-center">{i.phone}</td>
+                <td  className=" fw-normal style text-center">{i.comment || "No comment"}</td>
+                <td className="footer-class">
                     
-                      < button  onClick={() => setSelectedItem(i)} className="btn btn-sm btn-info p-3 style ms-5 fw-bold" style={{width:"20%"}}>Read</button>
-                       <button className="btn btn-sm btn-danger  p-3 style ms-3 fw-bold "onClick={() => setDeleteCandidate(i)} style={{width:"20%"}}>Delete</button>
-                       <button className="btn btn-sm btn-warning p-3 style ms-3 fw-bold "
+                      < button  onClick={() => setSelectedItem(i)} className=" twid btn  btn-info p-3 style  fw-bold" >Read</button>
+                       <button className="twid btn btn-sm btn-danger  p-3 style  fw-bold "onClick={() => setDeleteCandidate(i)} >Delete</button>
+                       <button className="twid btn btn-sm btn-warning p-3 style  fw-bold "
                         onClick={() => {
                        setEditCandidate(i);
-                       setEditForm({ name: i.name, email: i.email, phone: i.phone, comment: i.comment });}} style={{width:"20%"}}>Update</button>
+                       setEditForm({ name: i.name, email: i.email, phone: i.phone, comment: i.comment });}} >Update</button>
 
                 </td>
               </tr>
@@ -194,13 +196,17 @@ const handleUpdateSubmit = async () => {
           </tbody>
         </table>
       </div>
-    </div>
+  
+</div>
+
+
+
 
    {selectedItem && (
-  <div className="modal-overlay">
-    <div className="modal-content">
+  <div className="read border border-success modal-overlay">
+    <div className="read1 border border-success modal-content">
       <h3 className="mb-3 style text-center ">Selected Record</h3>
-      <table className="table table-bordered">
+      <table className=" border border-success table table-bordered">
         <tbody>
           <tr><th className='p-3 style text-center'>Name</th><td className='p-3 style text-center'>{selectedItem.name}</td></tr>
           <tr><th className='p-3 style text-center'>Email</th><td className='p-3 style text-center'>{selectedItem.email}</td></tr>
@@ -216,8 +222,8 @@ const handleUpdateSubmit = async () => {
 )}
 
 {deleteCandidate && (
-  <div className="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-75 z-3">
-    <div className="bg-white p-4 rounded shadow w-50">
+  <div className="delete position-fixed top-0 start-0  h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-75 z-3">
+    <div className="delete1 border border-success bg-white p-4 rounded shadow ">
       <h4 className="mb-3 style my-3 text-center">Are you sure you want to delete this record?</h4>
       <table className="table table-bordered">
         <tbody>
@@ -229,16 +235,16 @@ const handleUpdateSubmit = async () => {
       </table>
       <div className="d-flex justify-content-end gap-2 me-5">
         <button
-          className="btn btn-warning  " style={{width:"15%" }} onClick={() => setDeleteCandidate(null)} >Cancel</button>
-        <button className="btn btn-outline-warning" style={{width:"15%" }} onClick={() => handleDelete(deleteCandidate._id)}> Delete</button>
+          className="btn btn-warning  "  onClick={() => setDeleteCandidate(null)} >Cancel</button>
+        <button className="btn btn-outline-warning" onClick={() => handleDelete(deleteCandidate._id)}> Delete</button>
       </div>
     </div>
   </div>
 )}
 
 {editCandidate && (
-  <div className="modal-overlay" style={{marginTop:"4%"}}>
-    <div className="modal-content">
+  <div className="edit read modal-overlay" >
+    <div className=" modal-content">
       <h4 className="mb-3 text-center style">Edit Record</h4>
       <form>
         <div className="mb-2">
@@ -286,9 +292,9 @@ const handleUpdateSubmit = async () => {
 )}
 
 {createModalOpen && (
-  <div className="modal-overlay">
+  <div className="read edit modal-overlay">
     <div className="modal-content">
-      <h4 className="mb-3 text-success">Create New Record</h4>
+      <h4 className="mb-3 style text-black ">Create New Record</h4>
       <form>
         <div className="mb-2">
           <label className='fw-bold fs-5 style my-2 ms-3'>Name</label>

@@ -12,11 +12,11 @@ setIndex(prev => (prev + 1) % total);
   },[]);
   return (
 
-        <div className="position-relative w-100 " style={{ boxShadow: '0 7px 8px rgba(209, 117, 42, 0.2)', height: '600px', overflow: 'hidden', marginBottom:'50px'}}>
+        <div className="position-relative slider-class " style={{ boxShadow: '0 7px 8px rgba(209, 117, 42, 0.2)', height: '600px', overflow: 'hidden', marginBottom:'50px'}}>
      
         {dataset.map((item,i) => (
           <div
-          className={`position-absolute h-100 w-100 d-flex justify-content-center align-items-center transition-opacity ${i === Index ? 'opacity-100' : 'opacity-0'}`}
+          className={`  position-absolute h-100 w-100 d-flex justify-content-center align-items-center transition-opacity ${i === Index ? 'opacity-100' : 'opacity-0'}`}
             key={i}
             style={{
               
@@ -29,7 +29,7 @@ setIndex(prev => (prev + 1) % total);
           }}
           >
             
-           <h2 className=" style bg-warning text-black text-center p-3" style={{marginTop:'150px',fontSize:'200%',width:'25%', fontWeight:'bold',...style}}> {item.text}</h2>
+           <h2 className="slider-com style bg-warning text-black text-center p-3" style={{marginTop:'150px',fontSize:'200%',fontWeight:'bold',...style}}> {item.text}</h2>
           </div>
         ))}
       </div>

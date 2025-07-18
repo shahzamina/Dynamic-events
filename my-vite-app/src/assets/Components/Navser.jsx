@@ -187,14 +187,12 @@ const Navser = () => {
       
     ]
     const head="Our Services Setup"
-     const style = {
-  width :"40%"
-   }
+   
 
   return (
     <div>
-     <Mainhead head={head} style={style}/>
-     <p className='cus-st style my-3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; At Dynamic Events, we offer a complete spectrum of event management solutions—ranging from essential support to large-scale coordination—to ensure every aspect of your event is seamless and memorable. Whether you're planning an intimate gathering or a major corporate function, our team handles everything with precision and creativity. From concept to execution, we tailor our services to meet your unique needs, ensuring your event runs smoothly and leaves a lasting impression. At Dynamic Event Management, we provide a full suite of multimedia and technical solutions to bring your event to life with professionalism and impact. From crystal-clear audio systems and immersive lighting designs to high-definition video setups and large-format SMD screens, every detail is handled with precision. We offer scenic staging, custom setups, and expert rigging services to ensure your environment is both visually striking and structurally secure. Whether it’s a small private function or a large-scale production, our technical capabilities guarantee a seamless, high-quality experience.</p>
+     <Mainhead head={head} />
+     <p className='cus-st style my-3 about-class  '>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; At Dynamic Events, we offer a complete spectrum of event management solutions—ranging from essential support to large-scale coordination—to ensure every aspect of your event is seamless and memorable. Whether you're planning an intimate gathering or a major corporate function, our team handles everything with precision and creativity. From concept to execution, we tailor our services to meet your unique needs, ensuring your event runs smoothly and leaves a lasting impression. At Dynamic Event Management, we provide a full suite of multimedia and technical solutions to bring your event to life with professionalism and impact. From crystal-clear audio systems and immersive lighting designs to high-definition video setups and large-format SMD screens, every detail is handled with precision. We offer scenic staging, custom setups, and expert rigging services to ensure your environment is both visually striking and structurally secure. Whether it’s a small private function or a large-scale production, our technical capabilities guarantee a seamless, high-quality experience.</p>
     <Card data={data}/>
     <Conbtn />
     </div>

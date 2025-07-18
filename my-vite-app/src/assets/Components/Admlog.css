@@ -1,0 +1,14 @@
+ .adm-com {
+  width: 40%;
+    }
+@media (max-width: 992px) {
+  .adm-com {
+  width: 40%;
+    }
+}
+@media (max-width: 768px) {
+  .adm-com {
+  width: 64%;
+  margin-left: 2%;
+  }
+}

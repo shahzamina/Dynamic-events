@@ -13,7 +13,7 @@ body {
 }
 .footer{
     
-    width: 100%;
+   
     height: 480px;
     background-color: black;
 }
@@ -48,5 +48,80 @@ body {
    margin-left: 30px;
    font-size: 40px;
    color: warning;
+}
+
+.footer-dropdown {
+  position: absolute;
+   bottom: 75%;
+  left: 0;
+  background-color: black;
+ width: 200%;
+
+   transition: opacity 0.2s ease-in-out;
+  padding: 5px;
+ 
+ 
+}
+
+.footer-dropdown ul {
+  list-style: none;
+ padding: 5px;
+
+  margin-bottom: 0px;
+}
+
+
+.footer-class {
+  display: flex;
+  justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap:10px ;
+  }
+  @media (max-width: 992px) {
+  .footer-class {
+    display: flex;
+    align-items: center;
+     justify-content: space-around;
+    flex-direction: row;
+    gap:2px;
+  
+  }
+}
+@media (max-width: 768px) {
+  .footer-class {
+    display: flex;
+     justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    gap:1px ;
+  
+  }
+}
+.f-wid{
+    width: 100%; 
+     }
+  @media (max-width: 992px)  {
+  .f-wid {
+    width: 100%; 
+   }
+}
+@media (max-width: 768px) {
+  .f-wid {
+    width: 66%; 
+ }
+}
+.f-cur{
+  cursor: default;
+     }
+  @media (max-width: 992px)  {
+  .f-cur {
+    cursor: default;
+   }
+}
+@media (max-width: 768px) {
+  .f-cur{
+    cursor: pointer;
+ }
 }
 

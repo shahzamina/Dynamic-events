@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import './Packcom.css'; 
 const Packcom = () => {
     const Package=[
         {
@@ -62,16 +63,16 @@ const Packcom = () => {
     ];
   return (     
     
-    <div className=' d-flex gap-3' style={{marginBottom:'60px',marginTop:'50px', marginLeft:'50px',width: "90%", height: "100%"}}>
+    <div className='ms-md-5 your-class d-flex flex-md-row gap-3 d-sm-flex flex-sm-column gap-sm-3' style={{marginBottom:'60px',marginTop:'50px',height: "100%"}}>
       {Package.map((item)=>(
-        <div className=" Card-image  shadow" key={item.id}  style={{ marginLeft:'10px', marginTop:'20px'}}>
+        <div className=" pack-class Card-image  ms-sm-1  shadow" key={item.id}  style={{  marginTop:'20px',  maxWidth:"500px"}}>
         <div className='  bg-warning w-100 p-4' >
             <h3 className='style m-1 p-2 fw-bold text-center'>{item.pack}</h3>
             <h4  className='style fs-1 m-1 text-center '>{item.price}</h4>
             <h5 className='style m-1 text-center '>{item.limit}1</h5>
             <p className='style m-1 fs-5 p-3 text-center'>{item.description}</p>
         </div>
-        <ul  className='list-unstyled  w-100 m-0 text-center ' style={{backgroundColor:'rgba(212, 202, 202, 0.2)'}}>
+        <ul  className='list-unstyled m-0 text-center ' style={{backgroundColor:'rgba(212, 202, 202, 0.2)'}}>
             <li className='Card-image p-3 border style fs-4'>{item.item1}</li>
             <li className='Card-image p-3 border style fs-4'>{item.item2}</li>
             <li className='Card-image p-3 border style fs-4'>{item.item3}</li>

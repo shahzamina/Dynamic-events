@@ -1,7 +1,7 @@
 import { div } from 'framer-motion/client';
 import React from 'react'
 import { Link } from 'react-router-dom';
-
+import './Card.css'
 const Card = ({data=[], h1}) => {
  
  
@@ -11,11 +11,11 @@ const Card = ({data=[], h1}) => {
 
     <>
 
-     <h1 className='style text-center my-3'>{h1} </h1>
+     <h1 className='card1 style text-center  my-3 '>{h1}</h1>
    
-    <div className='row justify-content-center g-1 ' style={{ width: "100%", minheight: "80%", marginBottom:'60px', marginTop:'40px'}}>
+    <div className='card-comp  row justify-content-center g-1 col-12 ' style={{ minheight: "80%", marginBottom:'60px', marginTop:'40px'}}>
        {data.map((item) => (
-          <div key={item.id} className=' Card-image col-3 col-md-3 col-lg-2 ms-2 me-5 my-4 border-start rounded  border-orange' style={{  width:'23%', boxShadow:"1px 2px 8px rgb(190, 161, 29)", minHeight: "10px", }} >
+          <div key={item.id} className='card-comp1 Card-image me-5 my-4 border-start rounded  border-orange col-md-3 col-sm-7 ' style={{ boxShadow:"1px 2px 8px rgb(190, 161, 29)", minHeight: "10px", }} >
            
             <div className='text-center'>
               {item.image ? (

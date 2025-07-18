@@ -28,8 +28,8 @@ function Revcom() {
   ];
 
   return (
-    <div className="container py-5">
-     <div className='display gap-5'>
+    <div className="py-5 rev-com ">
+     <div className='display gap-5 footer-class '>
       {counterData.map((item, index) => (
         <div key={index} className="col-md-4 d-flex Card-image ">
           <div
